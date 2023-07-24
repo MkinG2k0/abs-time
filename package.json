@@ -1,0 +1,19 @@
+{
+	"private": true,
+	"scripts": {
+		"dev": "dotenv -e .env -- turbo run dev --no-daemon",
+		"build": "turbo run build --no-daemon",
+		"lint": "turbo run lint",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\""
+	},
+	"devDependencies": {
+		"eslint": "^8.41.0",
+		"eslint-config-custom": "workspace:*",
+		"prettier": "^2.8.8",
+		"prettier-config": "workspace:*",
+		"turbo": "^1.9.8",
+		"dotenv-cli": "^7.2.1"
+	},
+	"packageManager": "pnpm@7.15.0",
+	"name": "turborepo"
+}

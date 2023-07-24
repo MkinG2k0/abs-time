@@ -1,0 +1,35 @@
+*,
+:before,
+:after {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+}
+
+// scrollbar
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+	background-color: transparent;
+
+	&-track {
+		background-color: transparent;
+		//border-radius: 5px;
+	}
+
+	&-thumb {
+		background-color: var(--ion-color-step-200);
+		//border-radius: 5px;
+	}
+
+	&-corner {
+		background-color: var(--ion-color-step-200);
+	}
+}
